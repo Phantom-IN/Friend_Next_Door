@@ -1,0 +1,36 @@
+.faq-card {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.5s ease;
+}
+
+.faq-card:hover {
+  height: 100%;
+  background-color: #7082d1b5;
+  color: #fff;
+  transform: translateY(-5px);
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.1)
+}
+
+.faq-card-text {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.faq-card-answer {
+  display: none;
+}
+
+.faq-card:hover .faq-card-text {
+  display: none;
+}
+
+.faq-card:hover .faq-card-answer {
+  display: block;
+}
+
+
+ 

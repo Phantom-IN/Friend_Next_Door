@@ -1,0 +1,84 @@
+.main-pick-div h1{
+  text-align: center;
+  font-weight: 800;
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.main-pick-div h6{
+  text-align: center;
+  color: #161616;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.all-avatar {
+  display: grid;
+  
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  height: 350px;
+  padding: 20px;
+}
+
+.avatar-iii {
+  border: 1px solid white;
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.all-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.all-avatar p {
+  font-size: 14px;
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  transform: translateY(100%) translateY(25%); 
+  transition: transform 0.3s ease;
+}
+
+.avatar-iii:hover .caption {
+  transform: translateY(0);
+}
+
+img {
+  height: auto;
+}
+
+.image-container img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border: 1px solid white;
+}
+
+@media screen and (max-width: 578px) {
+  .all-avatar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+    flex-direction: row;
+    background-repeat: no-repeat;
+  }
+}
